@@ -90,6 +90,7 @@ public class UIManager : MonoBehaviour
     public void Retry()
     {
         PlayerPrefs.SetInt("PlayerHP", 3);
+        SoundManager.playingBGM = BGMType.None;
         SceneManager.LoadScene(retrySceneName);
     }
 

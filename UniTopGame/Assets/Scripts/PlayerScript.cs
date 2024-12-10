@@ -159,5 +159,7 @@ public class PlayerScript : MonoBehaviour
         rbody.AddForce(new Vector2(0,5),ForceMode2D.Impulse);
         animator.SetBool("isDead", true);
         Destroy(gameObject,1.0f);
+        SoundManager.soundManager.StopBgm();
+        SoundManager.soundManager.SEPlay(SEType.GameOver);
     }
 }

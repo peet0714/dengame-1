@@ -39,6 +39,15 @@ public class RoomManager : MonoBehaviour
                 break;
             }
         }
+        string scenename = PlayerPrefs.GetString("LastScene");
+        if (scenename == "BossStage")
+        {
+            SoundManager.soundManager.PlayBGM(BGMType.InBoss);
+        }
+        else
+        {
+            SoundManager.soundManager.PlayBGM(BGMType.InGame);
+        }
     }
 
     // Update is called once per frame

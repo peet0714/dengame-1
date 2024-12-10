@@ -140,7 +140,7 @@ public class PlayerController : MonoBehaviour
             if (oneway.isRight)
             { 
                 StartCoroutine(ForcedMove(Vector3.right));
-            }
+            } 
             if (oneway.isLeft)
             {
                 StartCoroutine(ForcedMove(Vector3.left));
