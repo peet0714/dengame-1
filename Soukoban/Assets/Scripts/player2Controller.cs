@@ -7,11 +7,12 @@ public class player2Controller : MonoBehaviour
     
     private Rigidbody2D rb2d;
     float speed = 5.0f; 
-    
+    float estimateTime = 0f;
     bool UpMoving = false;
     bool DownMoving = false;
     bool RightMoving = false;
     bool LeftMoving = false;
+    Vector3 targetPosition = Vector3.zero;
     
 
     // Start is called before the first frame update
@@ -22,45 +23,47 @@ public class player2Controller : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
-        
-        if (Input.GetKey(KeyCode.UpArrow))
+    {       
+        if (Input.GetKey(KeyCode.UpArrow)&&!DownMoving&&!RightMoving&&!LeftMoving)
         {
+            UpMoving = true;
             rb2d.velocity = Vector3.up *speed;            
         }
-        if (Input.GetKey(KeyCode.DownArrow))
+        if (Input.GetKey(KeyCode.DownArrow)&&!UpMoving&&!RightMoving&&!LeftMoving)
         {
+            DownMoving = true;
             rb2d.velocity = Vector3.down *speed;            
         }
-        if (Input.GetKey(KeyCode.RightArrow))
+        if (Input.GetKey(KeyCode.RightArrow)&&!DownMoving&&!UpMoving&&!LeftMoving)
         {
+            RightMoving = true;
             rb2d.velocity = Vector3.right *speed;            
         }
-        if (Input.GetKey(KeyCode.LeftArrow))
+        if (Input.GetKey(KeyCode.LeftArrow)&&!DownMoving&&!RightMoving&&!UpMoving)
         {
+            LeftMoving = true;
             rb2d.velocity = Vector3.left *speed;            
-        }
-         
-        if (Input.GetKeyUp(KeyCode.UpArrow))
+        }  
+        if (Input.GetKeyUp(KeyCode.UpArrow)&&!DownMoving&&!RightMoving&&!LeftMoving)
         {
-            StartCoroutine(Up());
-          
+            StartCoroutine(Up());          
         }
-        if (Input.GetKeyUp(KeyCode.DownArrow))
+        if (Input.GetKeyUp(KeyCode.DownArrow)&&!UpMoving&&!RightMoving&&!LeftMoving)
         {
-            StartCoroutine(Down());
-        
+            StartCoroutine(Down());        
         }
-        if (Input.GetKeyUp(KeyCode.RightArrow))
+        if (Input.GetKeyUp(KeyCode.RightArrow)&&!DownMoving&&!UpMoving&&!LeftMoving)
         {
-            StartCoroutine(Right());
-        
+            StartCoroutine(Right());        
         }
-        if (Input.GetKeyUp(KeyCode.LeftArrow))
+        if (Input.GetKeyUp(KeyCode.LeftArrow)&&!DownMoving&&!RightMoving&&!UpMoving)
         {
-            StartCoroutine(Left());
-           
+            StartCoroutine(Left());           
         }          
+    }
+    void FixedUpdate()
+    {
+        
     }
     private IEnumerator Up()
     {
@@ -68,10 +71,19 @@ public class player2Controller : MonoBehaviour
         {
             yield return null;
         }
-        UpMoving = true;
-        Vector3 targetPosition = new Vector3 (transform.position.x, Mathf.Ceil(transform.position.y), transform.position.z);
         float gap = Mathf.Ceil(transform.position.y)-transform.position.y;
-        float estimateTime = gap/speed;
+        if (gap <= 0.9f)
+        {
+            targetPosition = new Vector3 (transform.position.x, Mathf.Ceil(transform.position.y), transform.position.z);
+            estimateTime = gap/speed;
+        }
+        else
+        {
+            targetPosition = new Vector3 (transform.position.x, Mathf.Floor(transform.position.y), transform.position.z);
+            estimateTime = 0f;
+        }
+        
+        
         float elapsedTime = 0f;
         while(estimateTime >= elapsedTime)
         {
@@ -88,10 +100,18 @@ public class player2Controller : MonoBehaviour
         {
             yield return null;
         }
-        DownMoving = true;
-        Vector3 targetPosition = new Vector3 (transform.position.x, Mathf.Floor(transform.position.y), transform.position.z);
         float gap = -Mathf.Floor(transform.position.y)+transform.position.y;
-        float estimateTime = gap/speed;
+        if (gap <= 0.9f)
+        {
+            targetPosition = new Vector3 (transform.position.x, Mathf.Floor(transform.position.y), transform.position.z);
+            estimateTime = gap/speed;
+        }
+        else
+        {
+            targetPosition = new Vector3 (transform.position.x, Mathf.Ceil(transform.position.y), transform.position.z);
+            estimateTime = 0f;
+        }
+        
         float elapsedTime = 0f;
         while(estimateTime >= elapsedTime)
         {
@@ -108,10 +128,18 @@ public class player2Controller : MonoBehaviour
         {
             yield return null;
         }
-        RightMoving = true;
-        Vector3 targetPosition = new Vector3 (Mathf.Ceil(transform.position.x), transform.position.y, transform.position.z);
         float gap = Mathf.Ceil(transform.position.x)-transform.position.x;
-        float estimateTime = gap/speed;
+        if (gap <= 0.9f)
+        {
+            targetPosition = new Vector3 (Mathf.Ceil(transform.position.x), transform.position.y, transform.position.z);
+            estimateTime = gap/speed;
+        }
+        else
+        {
+            targetPosition = new Vector3 (Mathf.Floor(transform.position.x), transform.position.y, transform.position.z);
+            estimateTime = 0f;
+        }
+        
         float elapsedTime = 0f;
         while(estimateTime >= elapsedTime)
         {
@@ -128,10 +156,18 @@ public class player2Controller : MonoBehaviour
         {
             yield return null;
         }
-        LeftMoving = true;
-        Vector3 targetPosition = new Vector3 (Mathf.Floor(transform.position.x), transform.position.y, transform.position.z);
         float gap = -Mathf.Floor(transform.position.x)+transform.position.x;
-        float estimateTime = gap/speed;
+        if (gap <= 0.9f)
+        {
+            targetPosition = new Vector3 (Mathf.Floor(transform.position.x), transform.position.y, transform.position.z);
+            estimateTime = gap/speed;
+        }
+        else
+        {
+            targetPosition = new Vector3 (Mathf.Ceil(transform.position.x), transform.position.y, transform.position.z);
+            estimateTime = 0f;
+        }
+        
         float elapsedTime = 0f;
         while(estimateTime >= elapsedTime)
         {
