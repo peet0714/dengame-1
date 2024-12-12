@@ -18,14 +18,14 @@ public class oneway2 : MonoBehaviour
     void Update()
     {
         //もし入口にプレイヤーがいたら
-        //if ()
+        if (entry.playerHere)
         {
-            //barrier.enabled = ????;
+            barrier.enabled = false;
         }
         //もし出口にプレイヤーがいたら
-        //if ()
+        if (exit.playerHere)
         {
-            //barrier.enabled = ????;
+            barrier.enabled = true;
         }
     }
     

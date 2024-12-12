@@ -12,6 +12,10 @@ public class onewayexit : MonoBehaviour
         //もし接触した物体のタグが"Player"だったら
         if (other.CompareTag("Player"))
         {
+<<<<<<< HEAD
+=======
+            //二択trueまたはfalse
+>>>>>>> upstream/main
             playerHere = true;
         }
     }
@@ -20,6 +24,10 @@ public class onewayexit : MonoBehaviour
         //もし接触状態から離れた物体のタグが"Player"だったら
         if (other.CompareTag("Player"))
         {
+<<<<<<< HEAD
+=======
+            //二択trueまたはfalse
+>>>>>>> upstream/main
             playerHere = true;
         }
     }

@@ -15,6 +15,8 @@ public class BoxScript : MonoBehaviour
     public Sprite BoxGoalSprite;
     public SpriteRenderer BoxRenderer;
     public GameManager gameManager;
+    
+    
     //public OnewayboardScript oneway;
     bool isMoving = false;
 
@@ -22,6 +24,7 @@ public class BoxScript : MonoBehaviour
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
+        
     }
 
     // Update is called once per frame

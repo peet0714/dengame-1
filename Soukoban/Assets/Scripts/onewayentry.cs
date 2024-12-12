@@ -10,19 +10,19 @@ public class onewayentry : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
         //もし接触した物体のタグが"Player"だったら
-        //if (???????????)
+        if (other.CompareTag("Player"))
         {
             //二択trueまたはfalse
-            //playerHere = ????;
+            playerHere = true;
         }
     }
     void OnTriggerExit2D(Collider2D other)
     {
         //もし接触状態から離れた物体のタグが"Player"だったら
-        //if ()
+        if (other.CompareTag("Player"))
         {
             //二択trueまたはfalse
-            //playerHere = ????;
+            playerHere = true;
         }
     }
 }
