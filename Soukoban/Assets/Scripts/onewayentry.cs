@@ -22,7 +22,7 @@ public class onewayentry : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             //二択trueまたはfalse
-            playerHere = true;
+            playerHere = false;
         }
     }
 }

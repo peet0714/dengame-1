@@ -16,17 +16,18 @@ public class PlayerController : MonoBehaviour
     public bool isGameover = false;
     public int hasKeys = 0;
     public OnewayboardScript oneway;
-    public SwitchDoor switchDoor;
     
 
     void Start()
     {
+        hasKeys = 0;
         rb2d = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
     }
 
     void Update()
     {
+        Debug.Log(hasKeys);
         InputStay += Time.deltaTime;
         if (InputStay > Moveduration && gameManager.isClear == false)
         {
@@ -63,7 +64,7 @@ public class PlayerController : MonoBehaviour
     {
         Vector3 startPosition = transform.position;
         Vector3 targetPosition = startPosition + playerdirection * Movedistance;
-        float elapsedTime = 0f;
+        float elapsedTime = 0.01f;
         rb2d.velocity = playerdirection*speed;
         while (elapsedTime < Moveduration)
         {

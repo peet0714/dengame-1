@@ -104,7 +104,10 @@ MonoBehaviour:
   isUp: 0
   isDown: 0
   interval: 1
-  laser: {fileID: 368987887815870825, guid: 701a06e3625351743aadf36608265c6f, type: 3}
+  laserRight: {fileID: 7914125968346998945, guid: 487dd5847b82f4147b8817dcb0b0c632, type: 3}
+  laserLeft: {fileID: 940135170822512021, guid: bbc737804a383c04c91f6d9dbd73ca81, type: 3}
+  laserUp: {fileID: 2646042331773470942, guid: 7db3aee6f674058408cb400bcbdb7ad0, type: 3}
+  laserDown: {fileID: 8912401888022979330, guid: 89594c6f6680a8b46ac93089b6dde38f, type: 3}
   gameManager: {fileID: 0}
 --- !u!50 &8360293223682358185
 Rigidbody2D:

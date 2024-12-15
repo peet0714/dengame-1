@@ -27,8 +27,12 @@ public class onewayexit : MonoBehaviour
 <<<<<<< HEAD
 =======
             //二択trueまたはfalse
+<<<<<<< HEAD
 >>>>>>> upstream/main
             playerHere = true;
+=======
+            playerHere = false;
+>>>>>>> upstream/main
         }
     }
 }

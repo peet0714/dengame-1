@@ -16,7 +16,7 @@ public class KeyScript : MonoBehaviour
             //鍵のゲームオブジェクトを破壊
             Destroy(gameObject);
             //PlayerControllerの整数値hasKeysを1追加
-            player.hasKeys ++;
+            player.hasKeys += 1;
         }
     }
 }

@@ -10,7 +10,10 @@ public class LaserGunScript : MonoBehaviour
     public bool isDown = false;
     public float interval = 3.0f;
     private float elapsedTime = 1.0f;
-    public GameObject laser;
+    public GameObject laserRight;
+    public GameObject laserLeft;
+    public GameObject laserUp;
+    public GameObject laserDown;
     public GameManager gameManager;
     Vector3 launchPosition;
     private Rigidbody2D rb2d;
@@ -34,24 +37,22 @@ public class LaserGunScript : MonoBehaviour
         if (elapsedTime > interval)
         {
             elapsedTime = 0f;
-            if (isUp)
+            if (isRight)
             {
-                launchPosition = new Vector3(0f,-0.4f,0f);
+                Instantiate (laserRight, transform.position, Quaternion.identity);
+            }
+            else if (isLeft)
+            {
+                Instantiate (laserLeft, transform.position, Quaternion.identity);
+            }
+            else if (isUp)
+            {
+                Instantiate (laserUp, transform.position, Quaternion.identity);
             }
             else if (isDown)
             {
-                launchPosition = new Vector3(0f, 0.4f, 0f);
-            }
-            else
-            {
-                launchPosition = new Vector3(0f,0f,0f);
-            }
-            GameObject laserInstance = Instantiate (laser, transform.position+launchPosition, Quaternion.identity);
-            LaserScript laserScript = laserInstance.GetComponent<LaserScript>();
-            if (laserScript != null)
-            {
-                laserScript.laserGunScript = this;
-            }
+                Instantiate (laserDown, transform.position, Quaternion.identity);
+            } 
         }  
         GameObject player = GameObject.FindGameObjectWithTag("Player");
         Vector3 Distance = transform.position - player.transform.position;
