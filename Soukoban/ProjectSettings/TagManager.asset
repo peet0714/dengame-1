@@ -11,6 +11,7 @@ TagManager:
   - Oneway
   - Dummy
   - SwitchDoor
+  - LaserThrough
   layers:
   - Default
   - TransparentFX

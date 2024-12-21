@@ -11,28 +11,40 @@ public class FragileFloor : MonoBehaviour
     public SpriteRenderer floorRenderer;
     //壊れた床のSpriteを取得
     public Sprite broken;
+    public  CrackScript crack;
+    
     // Start is called before the first frame update
     void Start()
     {
         //BoxCollider2Dを取得その2
         //stopper = ?????;
         stopper = GetComponent<BoxCollider2D>();
+        
+    }
+
+    void Update()
+    {
+        if (crack.Break == true)
+        {
+            stopper.isTrigger = false;
+            floorRenderer.sprite = broken;
+        }
     }
 
     //プレイヤーがすり抜けて出て行った場合に、すり抜けられなくしてかつ画像を壊れた床に変更
     //void ????(???? other)
-    void OnTriggerExit2D(Collider2D other)
-    {
+    //void OnTriggerExit2D(Collider2D other)
+    //{
         //もし出て行ったgameObjectのタグが”Player”だったら
         //if (????????????)
-        if (other.gameObject.tag == "Player")
-        {
+        //if (other.gameObject.tag == "Player")
+        //{
             //BoxCollider2DのisTriggerをfalseにしてすり抜けられないようにする
             //?????
-            stopper.isTrigger = false;
+            //stopper.isTrigger = false;
             //SpriteRendererのspriteを壊れた床の画像にする。
             //?????
-            floorRenderer.sprite = broken;
-        }
-    }
+            //floorRenderer.sprite = broken;
+        //}
+    //}
 }

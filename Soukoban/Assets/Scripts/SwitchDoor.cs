@@ -31,12 +31,12 @@ public class SwitchDoor : MonoBehaviour
         }
         if (time>=waitingTime)
         {
-            door.isTrigger = false;
+            door.enabled = true;
             doorSprite.enabled = true;
         }
         if (switchButton.isPushed == true)
         {
-            door.isTrigger = true;
+            door.enabled = false;
             doorSprite.enabled = false;            
         }
     }

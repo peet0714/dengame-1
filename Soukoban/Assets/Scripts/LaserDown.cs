@@ -26,7 +26,7 @@ public class LaserDown : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.tag != "Lasergun"&& other.gameObject.tag != "Goal")
+        if (other.gameObject.tag != "Lasergun"&& other.gameObject.tag != "Goal"&&other.gameObject.tag != "LaserThrough"&&other.gameObject.tag!="Damage"&&other.gameObject.tag!="Oneway")
         {
             Destroy(gameObject);
         }
