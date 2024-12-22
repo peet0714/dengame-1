@@ -256,11 +256,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fa96998a7e62cb43bc84b825349ff4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isRight: 0
+  isRight: 1
   isLeft: 0
   isUp: 0
   isDown: 0
   interval: 1
+  elapsedTime: 1
   laserRight: {fileID: 7914125968346998945, guid: 487dd5847b82f4147b8817dcb0b0c632, type: 3}
   laserLeft: {fileID: 940135170822512021, guid: bbc737804a383c04c91f6d9dbd73ca81, type: 3}
   laserUp: {fileID: 2646042331773470942, guid: 7db3aee6f674058408cb400bcbdb7ad0, type: 3}
