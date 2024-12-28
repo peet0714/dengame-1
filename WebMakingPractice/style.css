@@ -1,0 +1,79 @@
+@charset "UtF-8";
+body 
+{
+    background-color: #f5f2e5;
+    background-image: url(images/view.jpg);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: center top;
+}
+/*コメント！*/
+
+h1
+{
+    color: #0bd;
+    font-size:300%;
+
+    font-family: "M PLUS Rounded 1c", serif;
+    font-weight: 700;
+    font-style: normal;
+
+}
+h2
+{
+
+    font-size:2rem;
+    font-family: "游ゴシック体", "Yu Gothic", YuGothic, sans-serif;
+}
+p
+{
+    font-size:20px;
+    color: red;
+    font-family: "ヒラギノ丸ゴ", "Hiragino Maru Gothic Pro", sans-serif;
+}
+article p
+{
+    font-weight:lighter;
+    line-height:1;
+}
+article
+{
+    background-color: #70a2dc;
+    width: 500px;
+    height: 200px;
+}
+aside p
+{
+    font-weight:bolder;
+    line-height:1.5;
+}
+footer
+{
+    background-color: rgba(0,255,0,.5);
+    margin-left: 30px;
+    margin-top: 100px;
+    padding-top:10px;
+}
+footer p
+{
+    font-weight:bold;
+    line-height:2;
+    text-align:center;
+}
+section h2
+{
+    font-size:30px;
+    
+    color:blue;
+}
+main p
+{
+    font-weight:bold;
+    font-size:25px;
+    color:green;
+}
+div p
+{
+    font-size:25px;
+    font-weight:bolder;
+}
