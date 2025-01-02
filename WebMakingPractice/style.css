@@ -31,6 +31,14 @@ p
     color: red;
     font-family: "ヒラギノ丸ゴ", "Hiragino Maru Gothic Pro", sans-serif;
 }
+.blue
+{
+    color: #0bd;
+}
+#orange
+{
+    color: orange;
+}
 article p
 {
     font-weight:lighter;
@@ -71,9 +79,50 @@ main p
     font-weight:bold;
     font-size:25px;
     color:green;
+    border-width: 1px 4px 8px 12px;
+    border-style: solid;
+    border-color: #fff;
 }
 div p
 {
     font-size:25px;
     font-weight:bolder;
+    border-width: thick;
+    border-style: double dotted ridge inset;
+    border-color:#000;
+}
+.item
+{
+    background: #0bd;
+    color: #fff;
+    margin: 10px;
+    padding: 10px;
+}
+.container
+{
+    display:flex;
+    /*flex-direction: row-reverse;*/
+    justify-content: space-around;
+    height: 60vh;
+    align-items: stretch;
+}
+.item2
+{
+    background: #0bd;
+    color: #fff;
+    padding: 10px;
+}
+.container2
+{
+    display:grid;
+    grid-template-columns: 200px 200px 200px;
+    gap:10px;
+}
+ul
+{
+    list-style-type: disc;
+}
+ol
+{
+    list-style-type: decimal;
 }
