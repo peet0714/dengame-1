@@ -11,7 +11,7 @@ public class KeyScript : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
         //もしぶつかったゲームオブジェクトのタグが”Player”なら
-        if (other.gameObject.tag == "Player")
+        if (other.CompareTag("Player"))
         {
             //鍵のゲームオブジェクトを破壊
             Destroy(gameObject);

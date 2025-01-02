@@ -17,16 +17,16 @@ public class GoalScript : MonoBehaviour
         
     }
 
-    void OnTriggerEnter2D(Collider2D xxxx)
+    void OnTriggerEnter2D(Collider2D other)
     {
-        if (xxxx.gameObject.tag == "Box")
+        if (other.CompareTag("Box"))
         {
             gameManager.remaingoals -= 1;
         }
     }
-    void OnTriggerExit2D(Collider2D xxxx)
+    void OnTriggerExit2D(Collider2D other)
     {
-        if (xxxx.gameObject.tag == "Box")
+        if (other.CompareTag("Box"))
         {
             gameManager.remaingoals += 1;
         }

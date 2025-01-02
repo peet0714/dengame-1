@@ -24,7 +24,7 @@ public class LockedDoorScript : MonoBehaviour
         //かつhasKeysの値が1以上なら
         if (player.hasKeys>=1)
         {
-            if (collision.gameObject.tag == "Player")
+            if (collision.gameObject.tag=="Player")
             {
                 //ドアを解錠＝ドアのゲームオブジェクトを破壊
                 Destroy(gameObject);

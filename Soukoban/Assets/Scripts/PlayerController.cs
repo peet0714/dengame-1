@@ -129,7 +129,7 @@ public class PlayerController : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {    
-        if (other.gameObject.tag == "Damage")
+        if (other.CompareTag("Damage"))
         {
             if (gameManager.isClear == true)
             {
@@ -140,9 +140,9 @@ public class PlayerController : MonoBehaviour
                 StartCoroutine(Gameover());
             }
         }
-        if (other.gameObject.tag == "Oneway")
+        if (other.CompareTag("Oneway"))
         {
-            InputStay = -0.2f;
+            InputStay = -0.22f;
             if (oneway.isRight)
             { 
                 StartCoroutine(ForcedMove(Vector3.right));
