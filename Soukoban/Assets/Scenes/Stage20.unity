@@ -435,8 +435,16 @@ PrefabInstance:
       value: LaserGun (1)
       objectReference: {fileID: 0}
     - target: {fileID: 7384381406452220761, guid: ba6e346b9c1c725489418e4ef39a47f4, type: 3}
+      propertyPath: isUp
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7384381406452220761, guid: ba6e346b9c1c725489418e4ef39a47f4, type: 3}
       propertyPath: interval
-      value: 0
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7384381406452220761, guid: ba6e346b9c1c725489418e4ef39a47f4, type: 3}
+      propertyPath: elapsedTime
+      value: -10
       objectReference: {fileID: 0}
     - target: {fileID: 7384381406452220761, guid: ba6e346b9c1c725489418e4ef39a47f4, type: 3}
       propertyPath: gameManager
@@ -937,8 +945,16 @@ PrefabInstance:
       value: LaserGun
       objectReference: {fileID: 0}
     - target: {fileID: 7384381406452220761, guid: ba6e346b9c1c725489418e4ef39a47f4, type: 3}
-      propertyPath: interval
+      propertyPath: isUp
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7384381406452220761, guid: ba6e346b9c1c725489418e4ef39a47f4, type: 3}
+      propertyPath: interval
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7384381406452220761, guid: ba6e346b9c1c725489418e4ef39a47f4, type: 3}
+      propertyPath: elapsedTime
+      value: -10
       objectReference: {fileID: 0}
     - target: {fileID: 7384381406452220761, guid: ba6e346b9c1c725489418e4ef39a47f4, type: 3}
       propertyPath: gameManager
