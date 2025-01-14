@@ -9,7 +9,7 @@ public class SwitchDoor : MonoBehaviour
     public Switch switchButton;
     public bool isBlocked = false;
     float time = 1f;
-    float waitingTime = 1f;
+    float waitingTime = 0.1f;
 
     // Start is called before the first frame update
     void Start()
