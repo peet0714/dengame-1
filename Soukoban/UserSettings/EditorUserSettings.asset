@@ -8,6 +8,7 @@ EditorUserSettings:
     RecentlyUsedSceneGuid-0:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 57080d505c01590f540a087b14270e44171641737d2e7f67757a4935e6e3356f
       flags: 0
     RecentlyUsedSceneGuid-1:
@@ -44,33 +45,40 @@ EditorUserSettings:
 >>>>>>> upstream/main
 =======
       value: 5004505354560b03545a5870137b0c444e4e417e2e7b75682c2f4435b3e36660
+=======
+      value: 50040d0355055b035f56597a467306444215492c78787264752d1b30e1b0623e
+>>>>>>> upstream/main
       flags: 0
     RecentlyUsedSceneGuid-1:
-      value: 000056055602510b5d0b5e7516200a44134f4e72787e7662297e4d65b4b6316d
+      value: 5155070201050a0b5a0f082049770844401549282e7171677e7e4c6bb0b23639
       flags: 0
     RecentlyUsedSceneGuid-2:
-      value: 53500d0401020d5e590a0d7548260a4415154c72747971342f7d1860b4e53239
+      value: 5b520c03040c59020c5e5b2311705c444e4f1b2b282e2266287c4835b0b0363d
       flags: 0
     RecentlyUsedSceneGuid-3:
-      value: 0709570553070f090f080e7743260b4445164e2f2e7925357e7c4431e7e4356b
+      value: 0503520557570d035a0c547340215e444f161e7d2f7c7e62287b1f60b1b4356d
       flags: 0
     RecentlyUsedSceneGuid-4:
-      value: 5102525e57530f0d0e57097347770944434e4c792a2b20662f2f4b6be7b9636f
+      value: 5400035256575c0a095e5c761274074413164e7d797b71347d2a446bbbb6623e
       flags: 0
     RecentlyUsedSceneGuid-5:
-      value: 52010c55015658585858557744270a4442161a787c787535792b4964b5b9316b
+      value: 00070c5353015f08550c5920407707444716497a2e7c7432297b4f6bb3e3603e
       flags: 0
     RecentlyUsedSceneGuid-6:
-      value: 5b0407520451510254080e7748730e44474e4a7e2e7b2035757a1935bab5326e
+      value: 57080d505c01590f540a087b14270e44171641737d2e7f67757a4935e6e3356f
       flags: 0
     RecentlyUsedSceneGuid-7:
-      value: 020902505705510a580c597348200f4417161b7e2e7b72337b711f6ab7b4326a
+      value: 02570004060c0b0a595a097b1325074415154d28787077337d7d4a61e7e6656c
       flags: 0
     RecentlyUsedSceneGuid-8:
       value: 5608070052045e02580a592114225e4443164d297c2e7e652f7c1866b1e1373b
       flags: 0
     RecentlyUsedSceneGuid-9:
+<<<<<<< HEAD
       value: 00040655510c08595d5b5526417a0a44154e4c7f2f7f70312b7b1830b1e56561
+>>>>>>> upstream/main
+=======
+      value: 5b0407520451510254080e7748730e44474e4a7e2e7b2035757a1935bab5326e
 >>>>>>> upstream/main
       flags: 0
     vcSharedLogLevel:
