@@ -1,20 +1,28 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SaveDataManager : MonoBehaviour
 {
-    private int grossStages = 40;
-    public int stageNumber = 1;
-    public int[] clearStages;
-    public GameManager gameManager;
-
+    private int[] isClear;
+    public Image image;
+    public int btnNum =1;
+    private int grossStages =40;
+    void Start()
+    {
+        isClear = new int[grossStages];
+        image = GetComponent<Image>();
+    }
     void Update()
     {
-        for (int i = 0; i<grossStages; i++)
+        for (int i=0; i<grossStages;i++)
         {
-            clearStages[i] =0;
+            isClear[i] = PlayerPrefs.GetInt((i+1).ToString());
+        }
+        if (isClear[btnNum-1] == 1)
+        {
+            image.color = new Color(0f, 0f, 0f);
         }
     }
-    
 }

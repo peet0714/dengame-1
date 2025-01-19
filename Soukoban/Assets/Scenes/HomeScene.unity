@@ -9025,6 +9025,7 @@ GameObject:
   - component: {fileID: 2031420203}
   - component: {fileID: 2031420202}
   - component: {fileID: 2031420201}
+  - component: {fileID: 2031420205}
   m_Layer: 5
   m_Name: Stage1Button
   m_TagString: Untagged
@@ -9159,6 +9160,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2031420199}
   m_CullTransparentMesh: 1
+--- !u!114 &2031420205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2031420199}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc0c9464429e78241ba7b3b33fdd9340, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 2031420203}
 --- !u!1 &2105817188
 GameObject:
   m_ObjectHideFlags: 0
