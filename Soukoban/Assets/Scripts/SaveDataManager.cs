@@ -22,7 +22,7 @@ public class SaveDataManager : MonoBehaviour
         }
         if (isClear[btnNum-1] == 1)
         {
-            image.color = new Color(0f, 0f, 0f);
+            image.color = new Color(0f, 170f, 255f);
         }
     }
 }
