@@ -372,6 +372,7 @@ GameObject:
   - component: {fileID: 94249279}
   - component: {fileID: 94249278}
   - component: {fileID: 94249277}
+  - component: {fileID: 94249281}
   m_Layer: 5
   m_Name: Stage29Button
   m_TagString: Untagged
@@ -506,6 +507,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Stage29
+--- !u!114 &94249281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 94249275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc0c9464429e78241ba7b3b33fdd9340, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 94249278}
+  btnNum: 29
 --- !u!1 &106166470
 GameObject:
   m_ObjectHideFlags: 0
@@ -598,6 +613,7 @@ GameObject:
   - component: {fileID: 114880305}
   - component: {fileID: 114880304}
   - component: {fileID: 114880303}
+  - component: {fileID: 114880307}
   m_Layer: 5
   m_Name: Stage2Button
   m_TagString: Untagged
@@ -732,6 +748,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 114880301}
   m_CullTransparentMesh: 1
+--- !u!114 &114880307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 114880301}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc0c9464429e78241ba7b3b33fdd9340, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 114880305}
+  btnNum: 2
 --- !u!1 &116888874
 GameObject:
   m_ObjectHideFlags: 0
@@ -745,6 +775,7 @@ GameObject:
   - component: {fileID: 116888878}
   - component: {fileID: 116888877}
   - component: {fileID: 116888876}
+  - component: {fileID: 116888880}
   m_Layer: 5
   m_Name: Stage19Button
   m_TagString: Untagged
@@ -879,6 +910,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Stage19
+--- !u!114 &116888880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 116888874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc0c9464429e78241ba7b3b33fdd9340, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 116888877}
+  btnNum: 19
 --- !u!1 &166890000
 GameObject:
   m_ObjectHideFlags: 0
@@ -1129,6 +1174,7 @@ GameObject:
   - component: {fileID: 251879375}
   - component: {fileID: 251879374}
   - component: {fileID: 251879373}
+  - component: {fileID: 251879377}
   m_Layer: 5
   m_Name: 'Stage20Button '
   m_TagString: Untagged
@@ -1263,6 +1309,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Stage20
+--- !u!114 &251879377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 251879371}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc0c9464429e78241ba7b3b33fdd9340, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 251879374}
+  btnNum: 20
 --- !u!1 &283082824
 GameObject:
   m_ObjectHideFlags: 0
@@ -1355,6 +1415,7 @@ GameObject:
   - component: {fileID: 283880910}
   - component: {fileID: 283880909}
   - component: {fileID: 283880908}
+  - component: {fileID: 283880912}
   m_Layer: 5
   m_Name: Stage31Button
   m_TagString: Untagged
@@ -1489,6 +1550,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Stage31
+--- !u!114 &283880912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 283880906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc0c9464429e78241ba7b3b33fdd9340, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 283880909}
+  btnNum: 31
 --- !u!1 &359814601
 GameObject:
   m_ObjectHideFlags: 0
@@ -1502,6 +1577,7 @@ GameObject:
   - component: {fileID: 359814605}
   - component: {fileID: 359814604}
   - component: {fileID: 359814603}
+  - component: {fileID: 359814607}
   m_Layer: 5
   m_Name: Stage5Button
   m_TagString: Untagged
@@ -1636,6 +1712,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Stage5
+--- !u!114 &359814607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 359814601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc0c9464429e78241ba7b3b33fdd9340, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 359814604}
+  btnNum: 5
 --- !u!1 &404786143
 GameObject:
   m_ObjectHideFlags: 0
@@ -1649,6 +1739,7 @@ GameObject:
   - component: {fileID: 404786147}
   - component: {fileID: 404786146}
   - component: {fileID: 404786145}
+  - component: {fileID: 404786149}
   m_Layer: 5
   m_Name: Stage34Button
   m_TagString: Untagged
@@ -1783,6 +1874,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Stage34
+--- !u!114 &404786149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 404786143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc0c9464429e78241ba7b3b33fdd9340, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 404786146}
+  btnNum: 34
 --- !u!1 &405305820
 GameObject:
   m_ObjectHideFlags: 0
@@ -1954,6 +2059,7 @@ GameObject:
   - component: {fileID: 416522358}
   - component: {fileID: 416522357}
   - component: {fileID: 416522356}
+  - component: {fileID: 416522360}
   m_Layer: 5
   m_Name: Stage38Button
   m_TagString: Untagged
@@ -2088,6 +2194,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Stage38
+--- !u!114 &416522360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 416522354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc0c9464429e78241ba7b3b33fdd9340, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 416522357}
+  btnNum: 38
 --- !u!1 &454800718
 GameObject:
   m_ObjectHideFlags: 0
@@ -2101,6 +2221,7 @@ GameObject:
   - component: {fileID: 454800722}
   - component: {fileID: 454800721}
   - component: {fileID: 454800720}
+  - component: {fileID: 454800724}
   m_Layer: 5
   m_Name: Stage40Button
   m_TagString: Untagged
@@ -2235,6 +2356,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Stage40
+--- !u!114 &454800724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 454800718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc0c9464429e78241ba7b3b33fdd9340, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 454800721}
+  btnNum: 40
 --- !u!1 &472394893
 GameObject:
   m_ObjectHideFlags: 0
@@ -2248,6 +2383,7 @@ GameObject:
   - component: {fileID: 472394897}
   - component: {fileID: 472394896}
   - component: {fileID: 472394895}
+  - component: {fileID: 472394899}
   m_Layer: 5
   m_Name: Stage30Button
   m_TagString: Untagged
@@ -2382,6 +2518,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Stage30
+--- !u!114 &472394899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 472394893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc0c9464429e78241ba7b3b33fdd9340, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 472394896}
+  btnNum: 30
 --- !u!1 &491474502
 GameObject:
   m_ObjectHideFlags: 0
@@ -2395,6 +2545,7 @@ GameObject:
   - component: {fileID: 491474506}
   - component: {fileID: 491474505}
   - component: {fileID: 491474504}
+  - component: {fileID: 491474508}
   m_Layer: 5
   m_Name: Stage13Button
   m_TagString: Untagged
@@ -2529,6 +2680,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Stage13
+--- !u!114 &491474508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 491474502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc0c9464429e78241ba7b3b33fdd9340, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 491474505}
+  btnNum: 13
 --- !u!1 &510000031
 GameObject:
   m_ObjectHideFlags: 0
@@ -2542,6 +2707,7 @@ GameObject:
   - component: {fileID: 510000035}
   - component: {fileID: 510000034}
   - component: {fileID: 510000033}
+  - component: {fileID: 510000037}
   m_Layer: 5
   m_Name: Stage26Button
   m_TagString: Untagged
@@ -2676,6 +2842,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Stage26
+--- !u!114 &510000037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 510000031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc0c9464429e78241ba7b3b33fdd9340, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 510000034}
+  btnNum: 26
 --- !u!1 &521018781
 GameObject:
   m_ObjectHideFlags: 0
@@ -2768,6 +2948,7 @@ GameObject:
   - component: {fileID: 522423929}
   - component: {fileID: 522423928}
   - component: {fileID: 522423927}
+  - component: {fileID: 522423931}
   m_Layer: 5
   m_Name: Stage39Button
   m_TagString: Untagged
@@ -2902,6 +3083,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Stage39
+--- !u!114 &522423931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 522423925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc0c9464429e78241ba7b3b33fdd9340, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 522423928}
+  btnNum: 39
 --- !u!1 &585716779
 GameObject:
   m_ObjectHideFlags: 0
@@ -2994,6 +3189,7 @@ GameObject:
   - component: {fileID: 607348571}
   - component: {fileID: 607348570}
   - component: {fileID: 607348569}
+  - component: {fileID: 607348573}
   m_Layer: 5
   m_Name: Stage23Button
   m_TagString: Untagged
@@ -3128,6 +3324,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Stage23
+--- !u!114 &607348573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 607348567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc0c9464429e78241ba7b3b33fdd9340, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 607348570}
+  btnNum: 23
 --- !u!1 &635540810
 GameObject:
   m_ObjectHideFlags: 0
@@ -3299,6 +3509,7 @@ GameObject:
   - component: {fileID: 710884910}
   - component: {fileID: 710884909}
   - component: {fileID: 710884908}
+  - component: {fileID: 710884912}
   m_Layer: 5
   m_Name: Stage36Button
   m_TagString: Untagged
@@ -3433,6 +3644,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Stage36
+--- !u!114 &710884912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 710884906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc0c9464429e78241ba7b3b33fdd9340, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 710884909}
+  btnNum: 36
 --- !u!1 &765242009
 GameObject:
   m_ObjectHideFlags: 0
@@ -3525,6 +3750,7 @@ GameObject:
   - component: {fileID: 780580068}
   - component: {fileID: 780580067}
   - component: {fileID: 780580066}
+  - component: {fileID: 780580070}
   m_Layer: 5
   m_Name: Stage24Button
   m_TagString: Untagged
@@ -3659,6 +3885,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Stage24
+--- !u!114 &780580070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 780580064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc0c9464429e78241ba7b3b33fdd9340, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 780580067}
+  btnNum: 24
 --- !u!1 &789240713
 GameObject:
   m_ObjectHideFlags: 0
@@ -3751,6 +3991,7 @@ GameObject:
   - component: {fileID: 810870035}
   - component: {fileID: 810870034}
   - component: {fileID: 810870033}
+  - component: {fileID: 810870037}
   m_Layer: 5
   m_Name: Stage7Button
   m_TagString: Untagged
@@ -3885,6 +4126,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Stage7
+--- !u!114 &810870037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 810870031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc0c9464429e78241ba7b3b33fdd9340, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 810870034}
+  btnNum: 7
 --- !u!1 &832386070
 GameObject:
   m_ObjectHideFlags: 0
@@ -3898,6 +4153,7 @@ GameObject:
   - component: {fileID: 832386074}
   - component: {fileID: 832386073}
   - component: {fileID: 832386072}
+  - component: {fileID: 832386076}
   m_Layer: 5
   m_Name: Stage17Button
   m_TagString: Untagged
@@ -4032,6 +4288,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Stage17
+--- !u!114 &832386076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 832386070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc0c9464429e78241ba7b3b33fdd9340, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 832386073}
+  btnNum: 17
 --- !u!1 &846332340
 GameObject:
   m_ObjectHideFlags: 0
@@ -4045,6 +4315,7 @@ GameObject:
   - component: {fileID: 846332344}
   - component: {fileID: 846332343}
   - component: {fileID: 846332342}
+  - component: {fileID: 846332346}
   m_Layer: 5
   m_Name: Stage35Button
   m_TagString: Untagged
@@ -4179,6 +4450,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Stage35
+--- !u!114 &846332346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 846332340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc0c9464429e78241ba7b3b33fdd9340, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 846332343}
+  btnNum: 35
 --- !u!1 &860883797
 GameObject:
   m_ObjectHideFlags: 0
@@ -4192,6 +4477,7 @@ GameObject:
   - component: {fileID: 860883801}
   - component: {fileID: 860883800}
   - component: {fileID: 860883799}
+  - component: {fileID: 860883803}
   m_Layer: 5
   m_Name: Stage8Button
   m_TagString: Untagged
@@ -4326,6 +4612,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Stage8
+--- !u!114 &860883803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 860883797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc0c9464429e78241ba7b3b33fdd9340, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 860883800}
+  btnNum: 8
 --- !u!1 &1036627065
 GameObject:
   m_ObjectHideFlags: 0
@@ -4339,6 +4639,7 @@ GameObject:
   - component: {fileID: 1036627070}
   - component: {fileID: 1036627069}
   - component: {fileID: 1036627068}
+  - component: {fileID: 1036627071}
   m_Layer: 5
   m_Name: Stage3Button
   m_TagString: Untagged
@@ -4473,6 +4774,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1036627065}
   m_CullTransparentMesh: 1
+--- !u!114 &1036627071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1036627065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc0c9464429e78241ba7b3b33fdd9340, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 1036627069}
+  btnNum: 3
 --- !u!1 &1058810895
 GameObject:
   m_ObjectHideFlags: 0
@@ -4565,6 +4880,7 @@ GameObject:
   - component: {fileID: 1075255276}
   - component: {fileID: 1075255275}
   - component: {fileID: 1075255274}
+  - component: {fileID: 1075255278}
   m_Layer: 5
   m_Name: Stage21Button
   m_TagString: Untagged
@@ -4699,6 +5015,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Stage21
+--- !u!114 &1075255278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1075255272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc0c9464429e78241ba7b3b33fdd9340, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 1075255275}
+  btnNum: 21
 --- !u!1 &1078448136
 GameObject:
   m_ObjectHideFlags: 0
@@ -5028,6 +5358,7 @@ GameObject:
   - component: {fileID: 1139014630}
   - component: {fileID: 1139014629}
   - component: {fileID: 1139014628}
+  - component: {fileID: 1139014632}
   m_Layer: 5
   m_Name: Stage10Button
   m_TagString: Untagged
@@ -5162,6 +5493,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Stage10
+--- !u!114 &1139014632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1139014626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc0c9464429e78241ba7b3b33fdd9340, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 1139014629}
+  btnNum: 10
 --- !u!1 &1169199695
 GameObject:
   m_ObjectHideFlags: 0
@@ -5175,6 +5520,7 @@ GameObject:
   - component: {fileID: 1169199699}
   - component: {fileID: 1169199698}
   - component: {fileID: 1169199697}
+  - component: {fileID: 1169199701}
   m_Layer: 5
   m_Name: Stage28Button
   m_TagString: Untagged
@@ -5309,6 +5655,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Stage28
+--- !u!114 &1169199701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1169199695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc0c9464429e78241ba7b3b33fdd9340, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 1169199698}
+  btnNum: 28
 --- !u!1 &1222004758
 GameObject:
   m_ObjectHideFlags: 0
@@ -5780,6 +6140,7 @@ GameObject:
   - component: {fileID: 1275024690}
   - component: {fileID: 1275024689}
   - component: {fileID: 1275024688}
+  - component: {fileID: 1275024692}
   m_Layer: 5
   m_Name: Stage27Button
   m_TagString: Untagged
@@ -5914,6 +6275,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Stage27
+--- !u!114 &1275024692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1275024686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc0c9464429e78241ba7b3b33fdd9340, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 1275024689}
+  btnNum: 27
 --- !u!1 &1306992662
 GameObject:
   m_ObjectHideFlags: 0
@@ -5950,7 +6325,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -6019,6 +6394,7 @@ GameObject:
   - component: {fileID: 1311852528}
   - component: {fileID: 1311852527}
   - component: {fileID: 1311852526}
+  - component: {fileID: 1311852530}
   m_Layer: 5
   m_Name: Stage18Button
   m_TagString: Untagged
@@ -6153,6 +6529,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Stage18
+--- !u!114 &1311852530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1311852524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc0c9464429e78241ba7b3b33fdd9340, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 1311852527}
+  btnNum: 18
 --- !u!1 &1314166118
 GameObject:
   m_ObjectHideFlags: 0
@@ -6324,6 +6714,7 @@ GameObject:
   - component: {fileID: 1350891662}
   - component: {fileID: 1350891661}
   - component: {fileID: 1350891660}
+  - component: {fileID: 1350891664}
   m_Layer: 5
   m_Name: Stage22Button
   m_TagString: Untagged
@@ -6458,6 +6849,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Stage22
+--- !u!114 &1350891664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1350891658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc0c9464429e78241ba7b3b33fdd9340, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 1350891661}
+  btnNum: 22
 --- !u!1 &1411189105
 GameObject:
   m_ObjectHideFlags: 0
@@ -6629,6 +7034,7 @@ GameObject:
   - component: {fileID: 1462746090}
   - component: {fileID: 1462746089}
   - component: {fileID: 1462746088}
+  - component: {fileID: 1462746092}
   m_Layer: 5
   m_Name: Stage37Button
   m_TagString: Untagged
@@ -6763,6 +7169,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Stage37
+--- !u!114 &1462746092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1462746086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc0c9464429e78241ba7b3b33fdd9340, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 1462746089}
+  btnNum: 37
 --- !u!1 &1493192638
 GameObject:
   m_ObjectHideFlags: 0
@@ -6934,6 +7354,7 @@ GameObject:
   - component: {fileID: 1548300495}
   - component: {fileID: 1548300494}
   - component: {fileID: 1548300493}
+  - component: {fileID: 1548300497}
   m_Layer: 5
   m_Name: Stage32Button
   m_TagString: Untagged
@@ -7068,6 +7489,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Stage32
+--- !u!114 &1548300497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1548300491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc0c9464429e78241ba7b3b33fdd9340, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 1548300494}
+  btnNum: 32
 --- !u!1 &1587859245
 GameObject:
   m_ObjectHideFlags: 0
@@ -7318,6 +7753,7 @@ GameObject:
   - component: {fileID: 1639981564}
   - component: {fileID: 1639981563}
   - component: {fileID: 1639981562}
+  - component: {fileID: 1639981566}
   m_Layer: 5
   m_Name: Stage33Button
   m_TagString: Untagged
@@ -7452,6 +7888,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Stage33
+--- !u!114 &1639981566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1639981560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc0c9464429e78241ba7b3b33fdd9340, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 1639981563}
+  btnNum: 33
 --- !u!1 &1663732391
 GameObject:
   m_ObjectHideFlags: 0
@@ -7465,6 +7915,7 @@ GameObject:
   - component: {fileID: 1663732395}
   - component: {fileID: 1663732394}
   - component: {fileID: 1663732393}
+  - component: {fileID: 1663732397}
   m_Layer: 5
   m_Name: Stage16Button
   m_TagString: Untagged
@@ -7599,6 +8050,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Stage16
+--- !u!114 &1663732397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1663732391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc0c9464429e78241ba7b3b33fdd9340, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 1663732394}
+  btnNum: 16
 --- !u!1 &1748142729
 GameObject:
   m_ObjectHideFlags: 0
@@ -7612,6 +8077,7 @@ GameObject:
   - component: {fileID: 1748142733}
   - component: {fileID: 1748142732}
   - component: {fileID: 1748142731}
+  - component: {fileID: 1748142735}
   m_Layer: 5
   m_Name: Stage14Button
   m_TagString: Untagged
@@ -7746,6 +8212,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Stage14
+--- !u!114 &1748142735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1748142729}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc0c9464429e78241ba7b3b33fdd9340, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 1748142732}
+  btnNum: 14
 --- !u!1 &1763386249
 GameObject:
   m_ObjectHideFlags: 0
@@ -7838,6 +8318,7 @@ GameObject:
   - component: {fileID: 1790569836}
   - component: {fileID: 1790569835}
   - component: {fileID: 1790569834}
+  - component: {fileID: 1790569838}
   m_Layer: 5
   m_Name: Stage6Button
   m_TagString: Untagged
@@ -7972,6 +8453,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Stage6
+--- !u!114 &1790569838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790569832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc0c9464429e78241ba7b3b33fdd9340, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 1790569835}
+  btnNum: 6
 --- !u!1 &1793255442
 GameObject:
   m_ObjectHideFlags: 0
@@ -7985,6 +8480,7 @@ GameObject:
   - component: {fileID: 1793255446}
   - component: {fileID: 1793255445}
   - component: {fileID: 1793255444}
+  - component: {fileID: 1793255448}
   m_Layer: 5
   m_Name: Stage11Button
   m_TagString: Untagged
@@ -8119,6 +8615,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Stage11
+--- !u!114 &1793255448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1793255442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc0c9464429e78241ba7b3b33fdd9340, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 1793255445}
+  btnNum: 11
 --- !u!1 &1805902697
 GameObject:
   m_ObjectHideFlags: 0
@@ -8132,6 +8642,7 @@ GameObject:
   - component: {fileID: 1805902701}
   - component: {fileID: 1805902700}
   - component: {fileID: 1805902699}
+  - component: {fileID: 1805902703}
   m_Layer: 5
   m_Name: Stage4Button
   m_TagString: Untagged
@@ -8266,6 +8777,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Stage4
+--- !u!114 &1805902703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1805902697}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc0c9464429e78241ba7b3b33fdd9340, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 1805902700}
+  btnNum: 4
 --- !u!1 &1816475160
 GameObject:
   m_ObjectHideFlags: 0
@@ -8279,6 +8804,7 @@ GameObject:
   - component: {fileID: 1816475164}
   - component: {fileID: 1816475163}
   - component: {fileID: 1816475162}
+  - component: {fileID: 1816475166}
   m_Layer: 5
   m_Name: Stage12Button
   m_TagString: Untagged
@@ -8413,6 +8939,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Stage12
+--- !u!114 &1816475166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1816475160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc0c9464429e78241ba7b3b33fdd9340, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 1816475163}
+  btnNum: 12
 --- !u!1 &1865470394
 GameObject:
   m_ObjectHideFlags: 0
@@ -8584,6 +9124,7 @@ GameObject:
   - component: {fileID: 1897966351}
   - component: {fileID: 1897966350}
   - component: {fileID: 1897966349}
+  - component: {fileID: 1897966353}
   m_Layer: 5
   m_Name: Stage25Button
   m_TagString: Untagged
@@ -8718,6 +9259,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Stage25
+--- !u!114 &1897966353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1897966347}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc0c9464429e78241ba7b3b33fdd9340, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 1897966350}
+  btnNum: 25
 --- !u!1 &1983681139
 GameObject:
   m_ObjectHideFlags: 0
@@ -8731,6 +9286,7 @@ GameObject:
   - component: {fileID: 1983681143}
   - component: {fileID: 1983681142}
   - component: {fileID: 1983681141}
+  - component: {fileID: 1983681145}
   m_Layer: 5
   m_Name: Stage9Button
   m_TagString: Untagged
@@ -8865,6 +9421,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Stage9
+--- !u!114 &1983681145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1983681139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc0c9464429e78241ba7b3b33fdd9340, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 1983681142}
+  btnNum: 9
 --- !u!1 &2025109759
 GameObject:
   m_ObjectHideFlags: 0
@@ -9025,6 +9595,7 @@ GameObject:
   - component: {fileID: 2031420203}
   - component: {fileID: 2031420202}
   - component: {fileID: 2031420201}
+  - component: {fileID: 2031420205}
   m_Layer: 5
   m_Name: Stage1Button
   m_TagString: Untagged
@@ -9159,6 +9730,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2031420199}
   m_CullTransparentMesh: 1
+--- !u!114 &2031420205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2031420199}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc0c9464429e78241ba7b3b33fdd9340, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 2031420203}
+  btnNum: 1
 --- !u!1 &2105817188
 GameObject:
   m_ObjectHideFlags: 0
@@ -9172,6 +9757,7 @@ GameObject:
   - component: {fileID: 2105817192}
   - component: {fileID: 2105817191}
   - component: {fileID: 2105817190}
+  - component: {fileID: 2105817194}
   m_Layer: 5
   m_Name: Stage15Button
   m_TagString: Untagged
@@ -9306,6 +9892,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Stage15
+--- !u!114 &2105817194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2105817188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc0c9464429e78241ba7b3b33fdd9340, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 2105817191}
+  btnNum: 15
 --- !u!1 &2116511057
 GameObject:
   m_ObjectHideFlags: 0

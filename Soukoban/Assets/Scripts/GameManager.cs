@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     public int remaingoals = 1;
+    public string stageNumber = "1";
     public bool isClear = false;
     public Text clearText;
     public GameObject clearImage;
@@ -43,6 +44,7 @@ public class GameManager : MonoBehaviour
                 isClear = true;            
                 clearText.text = "CLEAR";
                 nextStage.SetActive(true);
+                PlayerPrefs.SetInt(stageNumber,1);
             }
         }
     }
