@@ -2835,6 +2835,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   remaingoals: 8
+  stageNumber: 21
   isClear: 0
   clearText: {fileID: 299858715}
   clearImage: {fileID: 566281373}
