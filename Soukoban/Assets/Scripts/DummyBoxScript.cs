@@ -13,8 +13,7 @@ public class DummyBoxScript : MonoBehaviour
     float speed = 5.0f;
     float merge = 0.1f;
     public GameManager gameManager;
-    public OnewayboardScript oneway;
-    bool canMove = true;
+    bool canMove = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -42,6 +41,7 @@ public class DummyBoxScript : MonoBehaviour
             rb2d.constraints |= RigidbodyConstraints2D.FreezePositionX;
             rb2d.constraints |= RigidbodyConstraints2D.FreezePositionY;
         }
+        
         if (InputStay > Moveduration && gameManager.isClear == false)
         {
             if (up.magnitude < merge && Input.GetKeyDown(KeyCode.UpArrow))
