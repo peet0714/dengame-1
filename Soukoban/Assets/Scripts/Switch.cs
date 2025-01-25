@@ -30,8 +30,6 @@ public class Switch : MonoBehaviour
             onButton = true;
             SwitchRenderer.sprite = SwitchOn;
         }
-        
-        
     }
     void OnTriggerExit2D(Collider2D other)
     {
@@ -40,7 +38,6 @@ public class Switch : MonoBehaviour
             onButton = false;        
             StartCoroutine(SwitchPushed(OpenTime)); 
         }
-              
     }
     private IEnumerator SwitchPushed(float time)
     {
@@ -55,8 +52,8 @@ public class Switch : MonoBehaviour
             }
             yield return null;
         }
+        Debug.Log("閉める");
         isPushed = false;
         SwitchRenderer.sprite = SwitchOff;
     }
-
 }

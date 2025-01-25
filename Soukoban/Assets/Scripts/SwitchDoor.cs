@@ -21,6 +21,7 @@ public class SwitchDoor : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.Log(time);
         if (isBlocked == false && switchButton.isPushed == false)
         {
             time += Time.deltaTime;
@@ -31,6 +32,7 @@ public class SwitchDoor : MonoBehaviour
         }
         if (time>=waitingTime)
         {
+            
             door.isTrigger = false;
             doorSprite.enabled = true;
             gameObject.tag = "Untagged";
@@ -40,6 +42,7 @@ public class SwitchDoor : MonoBehaviour
             door.isTrigger = true;
             doorSprite.enabled = false;
             gameObject.tag = "LaserThrough";
+            
         }
     }
     void OnTriggerStay2D(Collider2D other)
@@ -49,6 +52,5 @@ public class SwitchDoor : MonoBehaviour
     void OnTriggerExit2D(Collider2D other)
     {
         isBlocked = false;
-        
     }
 }
