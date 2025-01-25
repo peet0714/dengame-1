@@ -19,7 +19,7 @@ public class BoxScript : MonoBehaviour
     
     
     //public OnewayboardScript oneway;
-    bool isMoving = false;
+    bool canMove = false;
 
     // Start is called before the first frame update
     void Start()
@@ -38,7 +38,7 @@ public class BoxScript : MonoBehaviour
         Vector3 left = Distance - Vector3.left;
         Vector3 right = Distance - Vector3.right;
         InputStay += Time.deltaTime;
-        if (Distance.magnitude < 1.3f || isMoving == true)
+        if (Distance.magnitude < 1.3f || canMove == true)
         {
             rb2d.constraints &= ~RigidbodyConstraints2D.FreezePositionX;
             rb2d.constraints &= ~RigidbodyConstraints2D.FreezePositionY;
@@ -107,26 +107,59 @@ public class BoxScript : MonoBehaviour
         transform.position = new Vector3(Mathf.Round(targetPosition.x),Mathf.Round(targetPosition.y),transform.position.z);      
     }
 
-    private IEnumerator ForcedMove(Vector3 playerdirection)
+    private IEnumerator ForcedMove(Vector3 direction)
     {
         yield return new WaitForSeconds(0.2f);
-        yield return Move(playerdirection);
-    }
-    private IEnumerator ForcedMove2(Vector3 playerdirection)
-    {
-        yield return Move(playerdirection);
-        isMoving = false;
+        yield return Move(direction);
     }
 
     void OnTriggerStay2D(Collider2D other)
     {
+        if (other.CompareTag("OnewayRight")||other.CompareTag("OnewayLeft")||other.CompareTag("OnewayUp")||other.CompareTag("OnewayDown"))
+        {
+            canMove = true;
+        }
         if (other.gameObject.tag == "Goal")
-        BoxRenderer.sprite = BoxGoalSprite;
+        {
+            BoxRenderer.sprite = BoxGoalSprite;
+        }
+        
     }
     void OnTriggerExit2D(Collider2D other)
     {
+        if (other.CompareTag("OnewayRight")||other.CompareTag("OnewayLeft")||other.CompareTag("OnewayUp")||other.CompareTag("OnewayDown"))
+        {
+            canMove = false;
+        }
         if (other.gameObject.tag == "Goal")
-        BoxRenderer.sprite = BoxSprite;
+        {
+            BoxRenderer.sprite = BoxSprite;
+        }
+        
     }
-    
+    void OnTriggerEnter2D(Collider2D other)
+    {    
+        
+        if (other.CompareTag("OnewayRight"))
+        {
+            InputStay = -0.22f;
+            StartCoroutine(ForcedMove(Vector3.right));         
+        }
+        if (other.CompareTag("OnewayLeft"))
+        {
+            InputStay = -0.22f;
+            StartCoroutine(ForcedMove(Vector3.left));         
+        }
+        if (other.CompareTag("OnewayUp"))
+        {
+            InputStay = -0.22f;
+            StartCoroutine(ForcedMove(Vector3.up));         
+        }
+        if (other.CompareTag("OnewayDown"))
+        {
+            InputStay = -0.22f;
+            StartCoroutine(ForcedMove(Vector3.down));         
+        }
+    }
+
 }

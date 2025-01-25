@@ -24,6 +24,7 @@ public class LaserGunScript : MonoBehaviour
     float Modifytime = 0.22f;
     float speed = 5.0f;
     float merge = 0.1f;
+    bool canMove = false;
     
     // Start is called before the first frame update
     void Start()
@@ -62,7 +63,7 @@ public class LaserGunScript : MonoBehaviour
         Vector3 left = Distance - Vector3.left;
         Vector3 right = Distance - Vector3.right;
         InputStay += Time.deltaTime;
-        if (Distance.magnitude < 1.3f)
+        if (Distance.magnitude < 1.3f||canMove)
         {
             rb2d.constraints &= ~RigidbodyConstraints2D.FreezePositionX;
             rb2d.constraints &= ~RigidbodyConstraints2D.FreezePositionY;
@@ -130,4 +131,48 @@ public class LaserGunScript : MonoBehaviour
         rb2d.velocity = new Vector3 (0,0,0);
         transform.position = new Vector3(Mathf.Round(targetPosition.x),Mathf.Round(targetPosition.y),transform.position.z);      
     }    
+    private IEnumerator ForcedMove(Vector3 direction)
+    {
+        yield return new WaitForSeconds(0.2f);
+        yield return Move(direction);
+    }
+
+    void OnTriggerStay2D(Collider2D other)
+    {
+        if (other.CompareTag("OnewayRight")||other.CompareTag("OnewayLeft")||other.CompareTag("OnewayUp")||other.CompareTag("OnewayDown"))
+        {
+            canMove = true;
+        }
+    }
+    void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("OnewayRight")||other.CompareTag("OnewayLeft")||other.CompareTag("OnewayUp")||other.CompareTag("OnewayDown"))
+        {
+            canMove = false;
+        }
+    }
+    void OnTriggerEnter2D(Collider2D other)
+    {    
+        
+        if (other.CompareTag("OnewayRight"))
+        {
+            InputStay = -0.22f;
+            StartCoroutine(ForcedMove(Vector3.right));         
+        }
+        if (other.CompareTag("OnewayLeft"))
+        {
+            InputStay = -0.22f;
+            StartCoroutine(ForcedMove(Vector3.left));         
+        }
+        if (other.CompareTag("OnewayUp"))
+        {
+            InputStay = -0.22f;
+            StartCoroutine(ForcedMove(Vector3.up));         
+        }
+        if (other.CompareTag("OnewayDown"))
+        {
+            InputStay = -0.22f;
+            StartCoroutine(ForcedMove(Vector3.down));         
+        }
+    }
 }

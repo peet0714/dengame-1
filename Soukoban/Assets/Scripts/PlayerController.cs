@@ -140,27 +140,26 @@ public class PlayerController : MonoBehaviour
                 StartCoroutine(Gameover());
             }
         }
-        if (other.CompareTag("Oneway"))
+        if (other.CompareTag("OnewayRight"))
         {
             InputStay = -0.22f;
-            if (oneway.isRight)
-            { 
-                StartCoroutine(ForcedMove(Vector3.right));
-            } 
-            if (oneway.isLeft)
-            {
-                StartCoroutine(ForcedMove(Vector3.left));
-            }
-            if (oneway.isUp)
-            {     
-                StartCoroutine(ForcedMove(Vector3.up));
-            }
-            if (oneway.isDown)
-            {                
-                StartCoroutine(ForcedMove(Vector3.down));
-            }            
+            StartCoroutine(ForcedMove(Vector3.right));         
         }
-        
+        if (other.CompareTag("OnewayLeft"))
+        {
+            InputStay = -0.22f;
+            StartCoroutine(ForcedMove(Vector3.left));         
+        }
+        if (other.CompareTag("OnewayUp"))
+        {
+            InputStay = -0.22f;
+            StartCoroutine(ForcedMove(Vector3.up));         
+        }
+        if (other.CompareTag("OnewayDown"))
+        {
+            InputStay = -0.22f;
+            StartCoroutine(ForcedMove(Vector3.down));         
+        }
     }
     
 }
