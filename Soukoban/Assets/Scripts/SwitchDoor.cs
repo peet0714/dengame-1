@@ -21,7 +21,6 @@ public class SwitchDoor : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(time);
         if (isBlocked == false && switchButton.isPushed == false)
         {
             time += Time.deltaTime;
