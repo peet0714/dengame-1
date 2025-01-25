@@ -52,7 +52,6 @@ public class Switch : MonoBehaviour
             }
             yield return null;
         }
-        Debug.Log("閉める");
         isPushed = false;
         SwitchRenderer.sprite = SwitchOff;
     }

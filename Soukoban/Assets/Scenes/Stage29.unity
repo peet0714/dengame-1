@@ -925,6 +925,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SwitchDoor (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 476747501439459357, guid: 86069192ddddd7949ab0a3e0351bb065, type: 3}
+      propertyPath: OpenTime
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4952692941733570653, guid: 86069192ddddd7949ab0a3e0351bb065, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5
@@ -1278,6 +1282,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SwitchDoor (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 476747501439459357, guid: 86069192ddddd7949ab0a3e0351bb065, type: 3}
+      propertyPath: OpenTime
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4952692941733570653, guid: 86069192ddddd7949ab0a3e0351bb065, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2
@@ -1557,7 +1565,7 @@ PrefabInstance:
       objectReference: {fileID: 1083605316}
     - target: {fileID: 4317909002182869491, guid: 5d9e1885f4e19eb48b88b507046011a7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4
+      value: -4
       objectReference: {fileID: 0}
     - target: {fileID: 4317909002182869491, guid: 5d9e1885f4e19eb48b88b507046011a7, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3181,6 +3189,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SwitchDoor
       objectReference: {fileID: 0}
+    - target: {fileID: 476747501439459357, guid: 86069192ddddd7949ab0a3e0351bb065, type: 3}
+      propertyPath: OpenTime
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4952692941733570653, guid: 86069192ddddd7949ab0a3e0351bb065, type: 3}
       propertyPath: m_LocalPosition.y
       value: -5
@@ -3389,6 +3401,10 @@ PrefabInstance:
     - target: {fileID: 255152435860338710, guid: 86069192ddddd7949ab0a3e0351bb065, type: 3}
       propertyPath: m_Name
       value: SwitchDoor (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 476747501439459357, guid: 86069192ddddd7949ab0a3e0351bb065, type: 3}
+      propertyPath: OpenTime
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4952692941733570653, guid: 86069192ddddd7949ab0a3e0351bb065, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3680,7 +3696,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6735591523274582504, guid: 5a166da51c3a93749a7011ec4db0a499, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6735591523274582504, guid: 5a166da51c3a93749a7011ec4db0a499, type: 3}
       propertyPath: m_LocalPosition.y
