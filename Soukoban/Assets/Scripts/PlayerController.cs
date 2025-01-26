@@ -97,7 +97,7 @@ public class PlayerController : MonoBehaviour
 
     private IEnumerator ForcedMove(Vector3 playerdirection)
     {
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(0.12f);
         if (playerdirection.x == 1)
         {
             direction = 3;
@@ -142,22 +142,22 @@ public class PlayerController : MonoBehaviour
         }
         if (other.CompareTag("OnewayRight"))
         {
-            InputStay = -0.22f;
+            InputStay = -0.14f;
             StartCoroutine(ForcedMove(Vector3.right));         
         }
         if (other.CompareTag("OnewayLeft"))
         {
-            InputStay = -0.22f;
+            InputStay = -0.14f;
             StartCoroutine(ForcedMove(Vector3.left));         
         }
         if (other.CompareTag("OnewayUp"))
         {
-            InputStay = -0.22f;
+            InputStay = -0.14f;
             StartCoroutine(ForcedMove(Vector3.up));         
         }
         if (other.CompareTag("OnewayDown"))
         {
-            InputStay = -0.22f;
+            InputStay = -0.14f;
             StartCoroutine(ForcedMove(Vector3.down));         
         }
     }
