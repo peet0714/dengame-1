@@ -26,7 +26,7 @@ public class LaserRight : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.tag != "Lasergun"&& other.gameObject.tag != "Goal"&&other.gameObject.tag != "LaserThrough"&&other.gameObject.tag!="Damage"&&other.gameObject.tag!="Oneway")
+        if (other.gameObject.tag != "Lasergun"&& other.gameObject.tag != "Goal"&&other.gameObject.tag != "LaserThrough"&&other.gameObject.tag!="Damage"&&other.gameObject.tag!="OnewayRight"&&other.gameObject.tag!="OnewayLeft"&&other.gameObject.tag!="OnewayUp"&&other.gameObject.tag!="OnewayDown")
         {
             Destroy(gameObject);
         }
