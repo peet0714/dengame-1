@@ -6,7 +6,7 @@ public class DummyBoxScript : MonoBehaviour
 {
     float Movedistance = 1.0f;
     float Moveduration = 0.2f;
-    float Movechecktime = 0.15f;
+    float Movechecktime = 0.1f;
     float InputStay = 1.0f;
     float Modifytime = 0.22f;
     private Rigidbody2D rb2d;
@@ -38,6 +38,7 @@ public class DummyBoxScript : MonoBehaviour
         }
         else
         {
+            
             rb2d.constraints |= RigidbodyConstraints2D.FreezePositionX;
             rb2d.constraints |= RigidbodyConstraints2D.FreezePositionY;
         }
@@ -84,7 +85,7 @@ public class DummyBoxScript : MonoBehaviour
             if (elapsedTime >= Movechecktime)
             {
                 Vector3 location = transform.position - startPosition;
-                if (location.magnitude >= 0.5f)
+                if (location.magnitude >= 0.3f)
                 {
                     rb2d.velocity = direction*speed;
                 }

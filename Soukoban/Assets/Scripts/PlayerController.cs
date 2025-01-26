@@ -71,6 +71,7 @@ public class PlayerController : MonoBehaviour
         Vector3 targetPosition = startPosition + playerdirection * Movedistance;
         float elapsedTime = 0.01f;
         rb2d.velocity = playerdirection*speed;
+        yield return new WaitForSeconds(0.01f);
         while (elapsedTime < Moveduration)
         {
             
@@ -78,7 +79,7 @@ public class PlayerController : MonoBehaviour
             if (elapsedTime >= Movechecktime)
             {
                 Vector3 location = transform.position - startPosition;
-                if (location.magnitude >= 0.2f)
+                if (location.magnitude >= 0.3f)
                 {
                     rb2d.velocity = playerdirection*speed;
                 }
