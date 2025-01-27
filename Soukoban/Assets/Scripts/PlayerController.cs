@@ -30,31 +30,31 @@ public class PlayerController : MonoBehaviour
     {
         //Debug.Log(hasKeys);
         InputStay += Time.deltaTime;
-        if (InputStay > Moveduration && gameManager.isClear == false)
+        if (InputStay > Moveduration&& gameManager.isClear == false)
         {
             if (Input.GetKeyDown(KeyCode.UpArrow))
             {
 
                 StartCoroutine(Move(Vector3.up));
-                InputStay = 0f;
+                InputStay = -0.02f;
                 direction = 2;
             }
             if (Input.GetKeyDown(KeyCode.DownArrow))
             {
                 StartCoroutine(Move(Vector3.down));
-                InputStay = 0f;
+                InputStay = -0.02f;
                 direction = 0;
             }
             if (Input.GetKeyDown(KeyCode.RightArrow))
             {
                 StartCoroutine(Move(Vector3.right));
-                InputStay = 0f;
+                InputStay = -0.02f;
                 direction = 3;
             }
             if (Input.GetKeyDown(KeyCode.LeftArrow))
             {
                 StartCoroutine(Move(Vector3.left));
-                InputStay = 0f;
+                InputStay = -0.02f;
                 direction = 1;
             }
         }
@@ -67,11 +67,12 @@ public class PlayerController : MonoBehaviour
 
     private IEnumerator Move(Vector3 playerdirection)
     {
+        yield return new WaitForSeconds(0.02f);
         Vector3 startPosition = transform.position;
         Vector3 targetPosition = startPosition + playerdirection * Movedistance;
         float elapsedTime = 0.01f;
         rb2d.velocity = playerdirection*speed;
-        yield return new WaitForSeconds(0.01f);
+        
         while (elapsedTime < Moveduration)
         {
             
@@ -79,12 +80,13 @@ public class PlayerController : MonoBehaviour
             if (elapsedTime >= Movechecktime)
             {
                 Vector3 location = transform.position - startPosition;
-                if (location.magnitude >= 0.3f)
+                if (location.magnitude >= 0.2f)
                 {
                     rb2d.velocity = playerdirection*speed;
                 }
                 else
                 {
+                    //Debug.Log("修正");
                     transform.position = new Vector3(Mathf.Round(startPosition.x),Mathf.Round(startPosition.y),transform.position.z);
                     rb2d.velocity = new Vector3 (0,0,0);
                     yield break;
@@ -126,6 +128,11 @@ public class PlayerController : MonoBehaviour
         Destroy(gameObject);
         isGameover = true;
         yield return null;
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        //Debug.Log("衝突");
     }
 
     void OnTriggerEnter2D(Collider2D other)
