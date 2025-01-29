@@ -4267,6 +4267,10 @@ PrefabInstance:
       propertyPath: interval
       value: 0.75
       objectReference: {fileID: 0}
+    - target: {fileID: 7384381406452220761, guid: ba6e346b9c1c725489418e4ef39a47f4, type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 390990223}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5717,6 +5721,10 @@ PrefabInstance:
       propertyPath: interval
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 7384381406452220761, guid: ba6e346b9c1c725489418e4ef39a47f4, type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 390990223}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5782,6 +5790,10 @@ PrefabInstance:
       propertyPath: interval
       value: 1.5
       objectReference: {fileID: 0}
+    - target: {fileID: 7384381406452220761, guid: ba6e346b9c1c725489418e4ef39a47f4, type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 390990223}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
