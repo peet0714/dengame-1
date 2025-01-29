@@ -1045,8 +1045,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f270f21edbfede549b3ffcd6c7dc1fd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hint: {fileID: 0}
-  hintBackButton: {fileID: 0}
+  hint: {fileID: 2104000345}
+  hintBackButton: {fileID: 1777393498}
 --- !u!114 &572865420
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5899,8 +5899,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbf4985af6c47e845891d4dfdefe30f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hint: {fileID: 0}
-  hintBackButton: {fileID: 0}
+  hint: {fileID: 2104000345}
+  hintBackButton: {fileID: 1777393498}
 --- !u!114 &1777393501
 MonoBehaviour:
   m_ObjectHideFlags: 0
