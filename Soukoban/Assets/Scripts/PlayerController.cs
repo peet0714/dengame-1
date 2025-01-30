@@ -67,7 +67,6 @@ public class PlayerController : MonoBehaviour
 
     private IEnumerator Move(Vector3 playerdirection)
     {
-        yield return new WaitForSeconds(0.02f);
         Vector3 startPosition = transform.position;
         Vector3 targetPosition = startPosition + playerdirection * Movedistance;
         float elapsedTime = 0.01f;
