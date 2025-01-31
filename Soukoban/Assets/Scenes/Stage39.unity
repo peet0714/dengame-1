@@ -835,8 +835,8 @@ RectTransform:
   m_Children:
   - {fileID: 619840195}
   - {fileID: 599867154}
-  - {fileID: 1037489926}
   - {fileID: 737160396}
+  - {fileID: 1037489926}
   - {fileID: 275234697}
   - {fileID: 1076670925}
   - {fileID: 1936445176}
