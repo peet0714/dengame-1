@@ -30,31 +30,31 @@ public class PlayerController : MonoBehaviour
     {
         //Debug.Log(hasKeys);
         InputStay += Time.deltaTime;
-        if (InputStay > Moveduration && gameManager.isClear == false)
+        if (InputStay > Moveduration&& gameManager.isClear == false)
         {
             if (Input.GetKeyDown(KeyCode.UpArrow))
             {
 
                 StartCoroutine(Move(Vector3.up));
-                InputStay = 0f;
+                InputStay = -0.02f;
                 direction = 2;
             }
             if (Input.GetKeyDown(KeyCode.DownArrow))
             {
                 StartCoroutine(Move(Vector3.down));
-                InputStay = 0f;
+                InputStay = -0.02f;
                 direction = 0;
             }
             if (Input.GetKeyDown(KeyCode.RightArrow))
             {
                 StartCoroutine(Move(Vector3.right));
-                InputStay = 0f;
+                InputStay = -0.02f;
                 direction = 3;
             }
             if (Input.GetKeyDown(KeyCode.LeftArrow))
             {
                 StartCoroutine(Move(Vector3.left));
-                InputStay = 0f;
+                InputStay = -0.02f;
                 direction = 1;
             }
         }
@@ -71,6 +71,7 @@ public class PlayerController : MonoBehaviour
         Vector3 targetPosition = startPosition + playerdirection * Movedistance;
         float elapsedTime = 0.01f;
         rb2d.velocity = playerdirection*speed;
+        
         while (elapsedTime < Moveduration)
         {
             
@@ -84,6 +85,7 @@ public class PlayerController : MonoBehaviour
                 }
                 else
                 {
+                    //Debug.Log("修正");
                     transform.position = new Vector3(Mathf.Round(startPosition.x),Mathf.Round(startPosition.y),transform.position.z);
                     rb2d.velocity = new Vector3 (0,0,0);
                     yield break;
@@ -97,7 +99,7 @@ public class PlayerController : MonoBehaviour
 
     private IEnumerator ForcedMove(Vector3 playerdirection)
     {
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(0.12f);
         if (playerdirection.x == 1)
         {
             direction = 3;
@@ -127,6 +129,11 @@ public class PlayerController : MonoBehaviour
         yield return null;
     }
 
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        //Debug.Log("衝突");
+    }
+
     void OnTriggerEnter2D(Collider2D other)
     {    
         if (other.CompareTag("Damage"))
@@ -142,22 +149,22 @@ public class PlayerController : MonoBehaviour
         }
         if (other.CompareTag("OnewayRight"))
         {
-            InputStay = -0.22f;
+            InputStay = -0.14f;
             StartCoroutine(ForcedMove(Vector3.right));         
         }
         if (other.CompareTag("OnewayLeft"))
         {
-            InputStay = -0.22f;
+            InputStay = -0.14f;
             StartCoroutine(ForcedMove(Vector3.left));         
         }
         if (other.CompareTag("OnewayUp"))
         {
-            InputStay = -0.22f;
+            InputStay = -0.14f;
             StartCoroutine(ForcedMove(Vector3.up));         
         }
         if (other.CompareTag("OnewayDown"))
         {
-            InputStay = -0.22f;
+            InputStay = -0.14f;
             StartCoroutine(ForcedMove(Vector3.down));         
         }
     }

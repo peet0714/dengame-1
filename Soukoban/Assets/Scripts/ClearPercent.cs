@@ -16,7 +16,7 @@ public class ClearPercent : MonoBehaviour
         {
             clearStages += PlayerPrefs.GetInt((i+1).ToString());
         }
-        text.text=$"クリア率 {clearStages} / 40";
+        text.text=$"Cleared Stages : {clearStages} / 40";
     }
 
     // Update is called once per frame

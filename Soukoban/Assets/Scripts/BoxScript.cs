@@ -6,7 +6,7 @@ public class BoxScript : MonoBehaviour
 {
     float Movedistance = 1.0f;
     float Moveduration = 0.2f;
-    float Movechecktime = 0.15f;
+    float Movechecktime = 0.1f;
     float InputStay = 1.0f;
     float Modifytime = 0.22f;
     private Rigidbody2D rb2d;
@@ -38,13 +38,14 @@ public class BoxScript : MonoBehaviour
         Vector3 left = Distance - Vector3.left;
         Vector3 right = Distance - Vector3.right;
         InputStay += Time.deltaTime;
-        if (Distance.magnitude < 1.3f || canMove == true)
+        if (Distance.magnitude < 1.5f || canMove == true)
         {
             rb2d.constraints &= ~RigidbodyConstraints2D.FreezePositionX;
             rb2d.constraints &= ~RigidbodyConstraints2D.FreezePositionY;
         }
         else
         {
+            
             rb2d.constraints |= RigidbodyConstraints2D.FreezePositionX;
             rb2d.constraints |= RigidbodyConstraints2D.FreezePositionY;
         }
@@ -53,22 +54,22 @@ public class BoxScript : MonoBehaviour
             if (up.magnitude < merge && Input.GetKeyDown(KeyCode.UpArrow))
             {
                 StartCoroutine(Move(Vector3.up));
-                InputStay = 0f;
+                InputStay = -0.02f;
             }
             if (down.magnitude < merge && Input.GetKeyDown(KeyCode.DownArrow))
             {
                 StartCoroutine(Move(Vector3.down));
-                InputStay = 0f;
+                InputStay = -0.02f;
             }
             if (right.magnitude < merge && Input.GetKeyDown(KeyCode.RightArrow))
             {
                 StartCoroutine(Move(Vector3.right));
-                InputStay = 0f;
+                InputStay = -0.02f;
             }
             if (left.magnitude < merge && Input.GetKeyDown(KeyCode.LeftArrow))
             {
                 StartCoroutine(Move(Vector3.left));
-                InputStay = 0f;
+                InputStay = -0.02f;
             }
         } 
         if (InputStay >= Modifytime)
@@ -90,7 +91,7 @@ public class BoxScript : MonoBehaviour
             if (elapsedTime >= Movechecktime)
             {
                 Vector3 location = transform.position - startPosition;
-                if (location.magnitude >= 0.5f)
+                if (location.magnitude >= 0.3f)
                 {
                     rb2d.velocity = playerdirection*speed;
                 }
@@ -109,7 +110,7 @@ public class BoxScript : MonoBehaviour
 
     private IEnumerator ForcedMove(Vector3 direction)
     {
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(0.12f);
         yield return Move(direction);
     }
 
@@ -142,22 +143,22 @@ public class BoxScript : MonoBehaviour
         
         if (other.CompareTag("OnewayRight"))
         {
-            InputStay = -0.22f;
+            InputStay = -0.14f;
             StartCoroutine(ForcedMove(Vector3.right));         
         }
         if (other.CompareTag("OnewayLeft"))
         {
-            InputStay = -0.22f;
+            InputStay = -0.14f;
             StartCoroutine(ForcedMove(Vector3.left));         
         }
         if (other.CompareTag("OnewayUp"))
         {
-            InputStay = -0.22f;
+            InputStay = -0.14f;
             StartCoroutine(ForcedMove(Vector3.up));         
         }
         if (other.CompareTag("OnewayDown"))
         {
-            InputStay = -0.22f;
+            InputStay = -0.14f;
             StartCoroutine(ForcedMove(Vector3.down));         
         }
     }
