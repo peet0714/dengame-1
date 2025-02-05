@@ -8,7 +8,8 @@ public class DummyBoxScript : MonoBehaviour
     float Moveduration = 0.2f;
     float Movechecktime = 0.1f;
     float InputStay = 1.0f;
-    float Modifytime = 0.22f;
+    float Modifytime = 0.19f;
+    
     private Rigidbody2D rb2d;
     float speed = 5.0f;
     float merge = 0.1f;
@@ -30,8 +31,9 @@ public class DummyBoxScript : MonoBehaviour
         Vector3 left = Distance - Vector3.left;
         Vector3 right = Distance - Vector3.right;
         InputStay += Time.deltaTime;
-        
-        if (canMove||Distance.magnitude<1.5f)
+
+        //移動床の上か、プレイヤーとの距離が近い時は自由に動ける
+        if (canMove||Distance.magnitude<1.1f)
         {
             rb2d.constraints &= ~RigidbodyConstraints2D.FreezePositionX;
             rb2d.constraints &= ~RigidbodyConstraints2D.FreezePositionY;
@@ -45,27 +47,29 @@ public class DummyBoxScript : MonoBehaviour
         
         if (InputStay > Moveduration && gameManager.isClear == false)
         {
+            //0.2秒間隔で入力できる
             if (up.magnitude < merge && Input.GetKeyDown(KeyCode.UpArrow))
             {
                 StartCoroutine(Move(Vector3.up));
-                InputStay = -0.02f;
+                InputStay = 0f;
             }
             if (down.magnitude < merge && Input.GetKeyDown(KeyCode.DownArrow))
             {
                 StartCoroutine(Move(Vector3.down));
-                InputStay = -0.02f;
+                InputStay = 0;
             }
             if (right.magnitude < merge && Input.GetKeyDown(KeyCode.RightArrow))
             {
                 StartCoroutine(Move(Vector3.right));
-                InputStay = -0.02f;
+                InputStay = 0f;
             }
             if (left.magnitude < merge && Input.GetKeyDown(KeyCode.LeftArrow))
             {
                 StartCoroutine(Move(Vector3.left));
-                InputStay = -0.02f;
+                InputStay = 0f;
             }
         } 
+        //入力後0.19秒後に位置修正
         if (InputStay >= Modifytime)
         {
             transform.position = new Vector3(Mathf.Round(transform.position.x),Mathf.Round(transform.position.y),transform.position.z);      
@@ -74,9 +78,10 @@ public class DummyBoxScript : MonoBehaviour
 
     private IEnumerator Move(Vector3 direction)
     {
+        //0.19秒かけて移動
         Vector3 startPosition = transform.position;
         Vector3 targetPosition = startPosition + direction * Movedistance;
-        float elapsedTime = 0f;
+        float elapsedTime = 0.01f;
         rb2d.velocity = direction*speed;
         while (elapsedTime < Moveduration)
         {
