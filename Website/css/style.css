@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+/*共通部分-------------------------------------------------*/
+
+header {
+    background-color: orange;
+}
+main {
+    background-color: #0bd;
+}
+main section {
+    background-color: pink;
+}
+footer {
+    background-color: #000000;
+    color: #ffffff;
+}

@@ -20,9 +20,13 @@ MonoBehaviour:
     height: 613.3334
   m_ShowMode: 4
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Title: Game
 =======
   m_Title: Project
+>>>>>>> upstream/main
+=======
+  m_Title: Game
 >>>>>>> upstream/main
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
@@ -104,9 +108,13 @@ MonoBehaviour:
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
   controlID: 18
 =======
   controlID: 61
+>>>>>>> upstream/main
+=======
+  controlID: 115
 >>>>>>> upstream/main
   draggingID: 0
 --- !u!114 &5
@@ -181,7 +189,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 62
+  controlID: 72
   draggingID: 0
 --- !u!114 &8
 MonoBehaviour:
@@ -193,7 +201,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: InspectorWindow
+  m_Name: GridPaintPaletteWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -208,15 +216,19 @@ MonoBehaviour:
 =======
     width: 275.33337
     height: 563.3333
-  m_MinSize: {x: 276, y: 71}
+  m_MinSize: {x: 241, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
+<<<<<<< HEAD
 >>>>>>> upstream/main
   m_ActualView: {fileID: 12}
+=======
+  m_ActualView: {fileID: 11}
+>>>>>>> upstream/main
   m_Panes:
   - {fileID: 12}
   - {fileID: 11}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -239,9 +251,14 @@ MonoBehaviour:
     height: 248
 =======
     height: 244.66667
+<<<<<<< HEAD
 >>>>>>> upstream/main
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
+=======
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
+>>>>>>> upstream/main
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -415,6 +432,7 @@ MonoBehaviour:
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_SelectedIDs: 5e630000
     m_LastClickedID: 25438
     m_ExpandedIDs: 000000003e63000000ca9a3bffffff7f
@@ -422,6 +440,11 @@ MonoBehaviour:
     m_SelectedIDs: 4c620000
     m_LastClickedID: 25164
     m_ExpandedIDs: 00000000cc61000000ca9a3b
+>>>>>>> upstream/main
+=======
+    m_SelectedIDs: 68640000
+    m_LastClickedID: 25704
+    m_ExpandedIDs: 00000000dc63000000ca9a3b
 >>>>>>> upstream/main
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -451,9 +474,13 @@ MonoBehaviour:
     m_SelectedIDs: 
     m_LastClickedID: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_ExpandedIDs: 000000003e630000
 =======
     m_ExpandedIDs: 00000000cc610000
+>>>>>>> upstream/main
+=======
+    m_ExpandedIDs: 00000000dc630000
 >>>>>>> upstream/main
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -978,6 +1005,7 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_Position:
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: {x: 0, y: 0, z: 0}
     speed: 2
     m_Value: {x: 0, y: 0, z: 0}
@@ -985,6 +1013,11 @@ MonoBehaviour:
     m_Target: {x: -1.4851819, y: 1.032342, z: -0.06966658}
     speed: 2
     m_Value: {x: -1.4851819, y: 1.032342, z: -0.06966658}
+>>>>>>> upstream/main
+=======
+    m_Target: {x: 0.1376179, y: 0.12477653, z: -0.14069834}
+    speed: 2
+    m_Value: {x: 0.1376179, y: 0.12477653, z: -0.14069834}
 >>>>>>> upstream/main
   m_RenderMode: 0
   m_CameraMode:
@@ -1036,6 +1069,7 @@ MonoBehaviour:
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: 10
     speed: 2
     m_Value: 10
@@ -1043,6 +1077,11 @@ MonoBehaviour:
     m_Target: 7.8326864
     speed: 2
     m_Value: 7.8326864
+>>>>>>> upstream/main
+=======
+    m_Target: 14.935881
+    speed: 2
+    m_Value: 14.935881
 >>>>>>> upstream/main
   m_Ortho:
     m_Target: 1
@@ -1106,6 +1145,7 @@ MonoBehaviour:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
       m_SelectedIDs: a6250000
       m_LastClickedID: 0
       m_ExpandedIDs: baf5ffffe8f6fffff4f7fffffcfaffff
@@ -1113,6 +1153,11 @@ MonoBehaviour:
       m_SelectedIDs: 52620000
       m_LastClickedID: 0
       m_ExpandedIDs: da37ffffc253ffffa857ffffe657ffff345cffffe85effffc060ffff8e61ffff2a62ffff3463ffffb264ffff4c66ffff1867ffffb467fffffa68ffffd269ffffa86cffff506dffffb26effffc270ffff6072ffffaa74ffff1476ffffc077ffff6c78ffff6079ffff047bfffffc7cffff3a7fffff907fffff5281ffffc281ffff3a82ffff0683ffff4284ffff5685fffff885ffff5086ffff0487ffff5e87ffffc087ffff1688ffff5c88ffff7e89ffff8e89ffffac89ffff348affff948cffffd48cffff96a9ffffbeb3ffffd2caffff38d4ffffd2dcffff5ee2ffff9ae3ffff96eaffff48efffff72f9ffff10faffff1cfbffffd2640000
+>>>>>>> upstream/main
+=======
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: c091feff0292feff3696feffea98feffc29afeff909bfeff2c9cfeff369dfeffb49efeff4ea0feff1aa1feffb6a1fefffca2feffd4a3feffaaa6feff52a7feffb4a8feffc4aafeff62acfeffacaefeff16b0feffc2b1feff6eb2feff62b3feff06b5fefffeb6feff3cb9feffeabbfeffacbdfeff1cbefeff94befeff4ebffeff8ac0feff9ec1feff40c2feff98c2feff4cc3feffa6c3feff08c4feff5ec4feffa4c4feff82c5feff92c5feffb0c5feff2cc6feffd2c9feffb6cdfefff4cdfeff3ad2feffe6d4feffb6d6feff7cd7feff10d8feff12d9feff88dafeff1adcfeffdedcfeff72ddfeffb0defeff80dffeff4ee2feffeee2feff48e4feff50e6feffe6e7feff28eafeff8aebfeff2eedfeffd2edfeffbeeefeff5af0feff4af2feff80f4feff26f7feffe0f8feff48f9feffb8f9feff6afafeff9efbfeffaafcfeff44fdfeff94fdfeff40fefeff92fefeffecfefeff3afffeff78fffeff4e00ffff5600ffff6c00ffff7c01ffffac34ffff8843fffffe45ffffa255ffffa657ffff2658ffffae58ffff2a59ffffe65fffffdc63ffff2264ffff6c68ffff1c6bfffff06cffffba6dffff526effff586fffffd270ffff6872ffff3073ffffc873ffff0a75ffffde75ffffb078ffff5479ffffb27affffbe7cffff587effff9e80ffff0482ffffac83ffff5484ffff4485ffffe486ffffd888ffff128bffff648bffff228dffff8e8dffff028effffca8effff0290ffff1291ffffb091ffff0492ffffb492ffff0a93ffff6893ffffba93fffffc93ffffd694ffffe294fffffc94ffff2696ffff36a4ffff5aa9ffff4aaaffffaeadffff9eb1ffffdcb1ffff2ab6ffffdeb8ffffb6baffff84bbffff20bcffff2abdffffa8beffff42c0ffff0ec1ffffaac1fffff0c2ffffc8c3ffff9ec6ffff46c7ffffa8c8ffffb8caffff56ccffffa0ceffff0ad0ffffb6d1ffff62d2ffff56d3fffffad4fffff2d6ffff30d9ffff86d9ffff48dbffffb8dbffff30dcfffffcdcffff38deffff4cdfffffeedfffff46e0fffffae0ffff54e1ffffb6e1ffff0ce2ffff52e2ffff30e3ffff40e3ffff5ee3ffffe4e3ffff1cfbffff8c6100000a620000189c000070a70000fcdd000086de0000e4de0000b2150100
 >>>>>>> upstream/main
       m_RenameOverlay:
         m_UserAcceptedRename: 0

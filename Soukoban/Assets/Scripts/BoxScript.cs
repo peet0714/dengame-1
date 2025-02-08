@@ -8,7 +8,7 @@ public class BoxScript : MonoBehaviour
     float Moveduration = 0.2f;
     float Movechecktime = 0.1f;
     float InputStay = 1.0f;
-    float Modifytime = 0.22f;
+    float Modifytime = 0.19f;
     private Rigidbody2D rb2d;
     float speed = 5.0f;
     float merge = 0.1f;
@@ -38,7 +38,7 @@ public class BoxScript : MonoBehaviour
         Vector3 left = Distance - Vector3.left;
         Vector3 right = Distance - Vector3.right;
         InputStay += Time.deltaTime;
-        if (Distance.magnitude < 1.5f || canMove == true)
+        if (Distance.magnitude < 1.1f || canMove == true)
         {
             rb2d.constraints &= ~RigidbodyConstraints2D.FreezePositionX;
             rb2d.constraints &= ~RigidbodyConstraints2D.FreezePositionY;
@@ -54,22 +54,22 @@ public class BoxScript : MonoBehaviour
             if (up.magnitude < merge && Input.GetKeyDown(KeyCode.UpArrow))
             {
                 StartCoroutine(Move(Vector3.up));
-                InputStay = -0.02f;
+                InputStay = 0f;
             }
             if (down.magnitude < merge && Input.GetKeyDown(KeyCode.DownArrow))
             {
                 StartCoroutine(Move(Vector3.down));
-                InputStay = -0.02f;
+                InputStay = 0f;
             }
             if (right.magnitude < merge && Input.GetKeyDown(KeyCode.RightArrow))
             {
                 StartCoroutine(Move(Vector3.right));
-                InputStay = -0.02f;
+                InputStay =0f;
             }
             if (left.magnitude < merge && Input.GetKeyDown(KeyCode.LeftArrow))
             {
                 StartCoroutine(Move(Vector3.left));
-                InputStay = -0.02f;
+                InputStay = 0f;
             }
         } 
         if (InputStay >= Modifytime)
@@ -82,7 +82,7 @@ public class BoxScript : MonoBehaviour
     {
         Vector3 startPosition = transform.position;
         Vector3 targetPosition = startPosition + playerdirection * Movedistance;
-        float elapsedTime = 0f;
+        float elapsedTime = 0.01f;
         rb2d.velocity = playerdirection*speed;
         while (elapsedTime < Moveduration)
         {

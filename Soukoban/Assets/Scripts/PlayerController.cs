@@ -10,13 +10,14 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rb2d;
     float speed = 5.0f;
     float InputStay = 1.0f;
-    float Modifytime = 0.22f;
+    float Modifytime = 0.19f;
     public GameManager gameManager;
     Animator animator;
     int direction = 0;
     public bool isGameover = false;
     public int hasKeys = 0;
     public OnewayboardScript oneway;
+    //bool rightMove = false;
     
 
     void Start()
@@ -32,41 +33,53 @@ public class PlayerController : MonoBehaviour
         InputStay += Time.deltaTime;
         if (InputStay > Moveduration&& gameManager.isClear == false)
         {
+            //0.2秒間隔で入力出来る
             if (Input.GetKeyDown(KeyCode.UpArrow))
             {
 
                 StartCoroutine(Move(Vector3.up));
-                InputStay = -0.02f;
+                InputStay = 0f;
                 direction = 2;
             }
             if (Input.GetKeyDown(KeyCode.DownArrow))
             {
                 StartCoroutine(Move(Vector3.down));
-                InputStay = -0.02f;
+                InputStay = 0f;
                 direction = 0;
             }
             if (Input.GetKeyDown(KeyCode.RightArrow))
             {
                 StartCoroutine(Move(Vector3.right));
-                InputStay = -0.02f;
+                InputStay = 0f;
                 direction = 3;
             }
             if (Input.GetKeyDown(KeyCode.LeftArrow))
             {
                 StartCoroutine(Move(Vector3.left));
-                InputStay = -0.02f;
+                InputStay = 0f;
                 direction = 1;
             }
         }
+        //移動開始から0.19秒で位置を修正
         if (InputStay >= Modifytime)
         {
             transform.position = new Vector3(Mathf.Round(transform.position.x),Mathf.Round(transform.position.y),transform.position.z);      
         } 
         animator.SetInteger("Direction", direction);        
     }
+    /*上手く動かなかった
+    void FixedUpdate()
+    {
+        if (rightMove)
+        {
+            StartCoroutine(Move(Vector3.right));
+        }
+    }
+    */
 
     private IEnumerator Move(Vector3 playerdirection)
     {
+        //0.19秒で移動が完了する
         Vector3 startPosition = transform.position;
         Vector3 targetPosition = startPosition + playerdirection * Movedistance;
         float elapsedTime = 0.01f;
@@ -74,11 +87,12 @@ public class PlayerController : MonoBehaviour
         
         while (elapsedTime < Moveduration)
         {
-            
+            //Debug.Log(elapsedTime);
             elapsedTime += Time.deltaTime;
             if (elapsedTime >= Movechecktime)
             {
                 Vector3 location = transform.position - startPosition;
+                //動いてなかったら元の位置に戻す。箱との差はColliderの大きさの差
                 if (location.magnitude >= 0.2f)
                 {
                     rb2d.velocity = playerdirection*speed;
